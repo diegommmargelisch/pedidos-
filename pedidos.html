@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pedido de Comida Rápida</title>
+  <link rel="stylesheet" href="styless.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍕 Pedido de Comida Rápida 🍔</h1>
+
+    <input type="text" id="nombre" placeholder="Nombre y apellido" required />
+
+    <label>📦 Pizza:</label>
+    <select id="pizza">
+      <option value="">Seleccionar...</option>
+      <option value="Margarita">Margarita - $3000</option>
+      <option value="Pepperoni">Pepperoni - $3500</option>
+      <option value="Cuatro Quesos">Cuatro Quesos - $4000</option>
+    </select>
+
+    <label>🍔 Hamburguesa:</label>
+    <select id="hamburguesa">
+      <option value="">Seleccionar...</option>
+      <option value="Clásica">Clásica - $2800</option>
+      <option value="Doble Carne">Doble Carne - $3500</option>
+      <option value="Vegetariana">Vegetariana - $3200</option>
+    </select>
+
+    <label>🥤 Bebida:</label>
+    <select id="bebida">
+      <option value="">Seleccionar...</option>
+      <option value="Coca-Cola">Coca-Cola - $1200</option>
+      <option value="Agua">Agua - $1000</option>
+      <option value="Cerveza">Cerveza - $1500</option>
+    </select>
+
+    <label>📝 Detalles extra:</label>
+    <textarea id="detalles" placeholder="¿Algo más que quieras agregar?"></textarea>
+
+    <button onclick="obtenerUbicacion()">📍 Compartir ubicación</button>
+    <p id="ubicacion-texto">Ubicación: (no enviada)</p>
+
+    <p class="total" id="total">Total: $0</p>
+
+    <p class="alias">💸 Transferencia a: <strong>comidas.rapidas.alias</strong></p>
+
+    <button onclick="enviarPedido()">📲 Enviar Pedido por WhatsApp</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+PK
